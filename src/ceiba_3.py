@@ -1,5 +1,6 @@
 # encoding: utf-8
 from __future__ import print_function
+__all__ =['OpenWeb']
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -13,7 +14,7 @@ sys.setdefaultencoding('UTF8')
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
 
-class OpenWeb():
+class OpenWeb:
    def __init__(self, driver=None):
       if driver==None:
          driver=webdriver.PhantomJS("/home/chto/node_modules/phantomjs/lib/phantom/bin/phantomjs")
