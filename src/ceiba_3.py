@@ -104,10 +104,10 @@ class OpenWeb:
    def Save(self, className,frameName):
       _fileList={}
       self.getLink(_fileList)
-      dirName="./test/%s/"%(className.replace('/', '_'))
+      dirName="./Ceiba_Crawler/test/%s/"%(className.replace('/', '_'))
       if not os.path.isdir(dirName.decode("utf8")):
          os.mkdir(dirName.decode("utf8"))
-      dirName="./test/%s/%s/"%(className.replace('/','_'),frameName.replace('/','_'))
+      dirName="./Ceiba_Crawler/test/%s/%s/"%(className.replace('/','_'),frameName.replace('/','_'))
       if not os.path.isdir(dirName.decode("utf8")):
          os.mkdir(dirName.decode("utf8"))
       for key in _fileList.keys():
@@ -116,10 +116,10 @@ class OpenWeb:
          sys.stdout.flush()
       print("\n")
    def SaveHW(self, className,frameName):
-      dirName="./test/%s/"%(className.replace('/', '_'))
+      dirName="./Ceiba_Crawler/test/%s/"%(className.replace('/', '_'))
       if not os.path.isdir(dirName.decode("utf8")):
          os.mkdir(dirName.decode("utf8"))
-      dirName="./test/%s/%s/"%(className.replace('/', '_'),frameName.replace('/', '_'))
+      dirName="./Ceiba_Crawler/test/%s/%s/"%(className.replace('/', '_'),frameName.replace('/', '_'))
       if not os.path.isdir(dirName.decode("utf8")):
          os.mkdir(dirName.decode("utf8"))
       self.SaveTwoLayerFile(dirName)
@@ -143,10 +143,10 @@ class OpenWeb:
       print("\n")
 
    def SaveBu(self, className,frameName):
-      dirName="./test/%s/"%(className.replace('/', '_'))
+      dirName="./Ceiba_Crawler/test/%s/"%(className.replace('/', '_'))
       if not os.path.isdir(dirName.decode("utf8")):
          os.mkdir(dirName.decode("utf8"))
-      dirName="./test/%s/%s/"%(className.replace('/', '_'),frameName.replace('/', '_'))
+      dirName="./Ceiba_Crawler/test/%s/%s/"%(className.replace('/', '_'),frameName.replace('/', '_'))
       if not os.path.isdir(dirName.decode("utf8")):
          os.mkdir(dirName.decode("utf8"))
       select = Select(self.driver.find_element_by_name("jump"))
